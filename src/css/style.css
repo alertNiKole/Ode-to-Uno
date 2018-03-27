@@ -1,0 +1,117 @@
+/*/ CSS Ode to Uno /*/
+
+/*
+<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Questrial" rel="stylesheet">
+
+font-family: 'Questrial', sans-serif;
+font-family: 'Quintessential', cursive;
+*/
+
+body {
+    background: #008a4aed;
+}
+
+.wrapper {
+    background-image: url(/src/images/lucky.png);
+    max-width: 100%;
+    max-height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.titleBox {
+    font-family: 'Quintessential', cursive;
+    margin-left: -18em;
+}
+
+.titleBox h1 {
+    font-size: 10em;
+    color: #fff;
+    text-shadow: 2px 2px 10px black;
+}
+.titleBox h2 {
+    margin-top: -1em;
+}
+.playerCard, .computerCard{
+    border: 3px ridge white;
+    border-radius: 2em;
+    max-width: 250px;
+    max-height: 350px;
+    width: 200px;
+    height: 300px;
+}
+
+.playerCard {
+    float: left;
+    margin-left: -5em;
+    margin-top: 5em;
+}
+
+.computerCard {
+    float: right;
+    margin-right: -10em;
+    margin-top: 5em;
+}
+
+.current {
+    max-width: 60px;
+    max-height: 60px;
+    width: 60px;
+    height: 60px;
+    border: 1px dashed white; /*Kill on fill */
+    border-top-left-radius: 2em;
+}
+
+.current2 {
+    max-width: 60px;
+    max-height: 60px;
+    width: 60px;
+    height: 60px;
+    border: 1px dashed #fff;
+    border-bottom-right-radius: 2em;
+    margin-left: 9em;
+    margin-top: 11.5em;
+}
+
+.infoBox {
+
+    border: 1px outset white;
+    border-radius: 3em;
+}
+
+
+/*/  Your Cards  /*/
+.yourCards {
+    border: 3px outset white;
+    width: 100%;
+    max-height: 275px;
+    padding: 1em;
+    border-radius: 2em;
+    margin-top: 37em;
+}
+.yourCardsHeading {
+    transform: rotate(-10deg);
+    margin-top: -2.5em;
+    z-index: 80;
+}
+.one {
+    margin-right: -10em;
+    margin-top: 5em;
+    border: 3px ridge white;
+    border-radius: 2em;
+    max-width: 250px;
+    max-height: 350px;
+    width: 175px;
+    height: 235px;
+}
+
+.one.current2 {
+    margin-top: -1em;
+    float: right;
+    margin-right: -10em;
+    margin-top: 5em;
+}
