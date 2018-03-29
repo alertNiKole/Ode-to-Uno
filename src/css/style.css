@@ -16,7 +16,7 @@ body {
     max-width: 100%;
     max-height: 100vh;
     min-height: 100vh;
-    overflow: hidden;
+/*    overflow: hidden; */
     width: 100%;
     background-size: 45%;
     background-repeat: no-repeat;
@@ -25,7 +25,7 @@ body {
 
 .titleBox {
     font-family: 'Quintessential', cursive;
-    margin-left: -18em;
+    margin-left: -25em;
 }
 
 .titleBox h1 {
@@ -78,7 +78,6 @@ body {
 }
 
 .infoBox {
-
     border: 1px outset white;
     border-radius: 3em;
 }
@@ -87,31 +86,228 @@ body {
 /*/  Your Cards  /*/
 .yourCards {
     border: 3px outset white;
-    width: 100%;
+    width: 110%;
     max-height: 275px;
     padding: 1em;
     border-radius: 2em;
     margin-top: 37em;
+    padding-bottom: 20em;
 }
-.yourCardsHeading {
-    transform: rotate(-10deg);
-    margin-top: -2.5em;
-    z-index: 80;
+
+.hand {
+    margin-left: -5em;
+    margin-top: -1em;
 }
-.one {
-    margin-right: -10em;
-    margin-top: 5em;
-    border: 3px ridge white;
+.hand h3 {
+    color: white;
+    font-size: 2em;
+
+}
+
+.playerTitle{
+    color: #fff;
+    margin-top: -11em;
+    margin-left: -3em;
+    font-size: 1.7em;
+    padding-right: 1em;
+}
+
+.computerTitle {
+    color: #fff;
+    margin-top: -12em;
+    margin-left: 10em;
+    font-size: 1.5em;
+    padding-left: 1em;  
+}
+
+.yourCard {
+    background: #800080;
     border-radius: 2em;
     max-width: 250px;
     max-height: 350px;
     width: 175px;
     height: 235px;
+    float: left;
+    margin-right: 1em;
+    margin-top: -14em;
 }
 
-.one.current2 {
+.one, .two, .three, .four, .five, .six, .seven {
+    float: left;
+    margin-right: -1em;
+    border: 3px ridge #fff;
+    border-radius: 2em;
+    max-width: 250px;
+    max-height: 350px;
+    width: 175px;
+    height: 235px;
+    background-image: url(/src/images/lucky_w_500.png);
+    max-width: 100%;
+    background-size: 96%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.yourCard .six .currentb, .one .current2, .two .current2, .three .current2, .four .current2, .five .current2, .six .current2, .seven .current2, {
     margin-top: -1em;
     float: right;
-    margin-right: -10em;
-    margin-top: 5em;
+    margin-left: 0em;
+    margin-top: 7.1em;
+    border: 2px inset red;
+}
+
+
+
+
+/*/  Your Cards  /*/
+.yourCards {
+    border: 3px outset white;
+    width: 110%;
+    max-height: 275px;
+    padding: 1em;
+    border-radius: 2em;
+    margin-top: 37em;
+    padding-bottom: 20em;
+}
+
+.hand {
+    margin-left: -5em;
+    margin-top: -1em;
+}
+.hand h3 {
+    color: white;
+    font-size: 2em;
+
+}
+
+.playerTitle{
+    color: #fff;
+    margin-top: -11em;
+    margin-left: -3em;
+    font-size: 1.7em;
+    padding-right: 1em;
+}
+
+.computerTitle {
+    color: #fff;
+    margin-top: -12em;
+    margin-left: 10em;
+    font-size: 1.5em;
+    padding-left: 1em;  
+}
+
+.yourCard {
+    background: #800080;
+    border-radius: 2em;
+    max-width: 250px;
+    max-height: 350px;
+    width: 175px;
+    height: 235px;
+    float: left;
+    margin-right: 1em;
+    margin-top: -14em;
+}
+
+.one, .two, .three, .four, .five, .six, .seven {
+    float: left;
+    margin-right: -1em;
+    border: 3px ridge #fff;
+    border-radius: 2em;
+    max-width: 250px;
+    max-height: 350px;
+    width: 175px;
+    height: 235px;
+    background-image: url(/src/images/lucky_w_500.png);
+    max-width: 100%;
+    background-size: 96%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.yourCard .six .currentb, .one .current2, .two .current2, .three .current2, .four .current2, .five .current2, .six .current2, .seven .current2, {
+    margin-top: -1em;
+    float: right;
+    margin-left: 0em;
+    margin-top: 7.1em;
+    border: 2px inset red;
+}
+
+
+/*/     NEW     /*/
+
+.cardInner{
+    background: #ea09f1;
+    border-radius: 2em;
+    max-width: 250px;
+    max-height: 350px;
+    width: 175px;
+    height: 235px;
+    float: left;
+    margin-right: 1em;
+    margin-top: -14em;
+    z-index: 80;
+}
+
+#one{
+margin-top: -1em;
+float: right;
+margin-left: 0em;
+margin-top: 7.1em;
+border: 2px inset red;
+}
+
+.card {
+    float: left;
+    margin-right: -1em;
+    border: 3px ridge #fff;
+    border-radius: 2em;
+    max-width: 250px;
+    max-height: 350px;
+    width: 175px;
+    height: 235px;
+    background-image: url(/src/images/lucky_w_500.png);
+    max-width: 100%;
+    background-size: 96%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 90;
+}
+
+.p1 {
+ border: 3px inset gold;
+}
+
+.p2 {
+    border: 3px inset #e28b07ed;
+    background: tomato;
+}
+
+.p3 {
+    border: 3px inset #0059ff;
+    width: 250px;
+    height: 275px;
+    background-image: url(/src/images/lucky_w_500.png);
+    max-width: 100%;
+    background-size: 96%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: -20em;
+}
+
+
+.t1{
+    margin-top:3em;     
+    border:2px outset lime;
+    padding: 12px;
+    max-width:225px;
+    max-height: 300px;
+}       
+
+.t2 img {
+
+    border:2px outset rgb(156, 189, 13);
+    padding: 12px;
+    max-width:225px;
+    max-height: 300px;
+    
 }
