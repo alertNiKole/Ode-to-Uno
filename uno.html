@@ -45,10 +45,16 @@
                     </div>
 
 <!--Score Box-->
-<div class="scoreBox">
+<div class="z-depth-5 scoreBox">
     <div class="rounds">Rounds Played:<span id="roundsCount">0</span></div>
     <div class="playerWins">Wins:<span id="wins">12</span></div>
     <div class="computerWins">Losses:<span id=computerWins>2</span></div>
+</div>
+
+
+<div class="z-depth-5 instructions" hidden>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad commodi quas iure excepturi tempora ratione, consequatur in at quod nulla. Odio ratione excepturi ipsam dignissimos sint, magnam ducimus eius ea consequuntur nostrum. Quam corrupti tempora, velit error ea ab fugiat, dignissimos repellat soluta exercitationem porro?
+
 </div>
 <!--Card Template
 
@@ -101,7 +107,7 @@
 <div class="z-depth-5 yourCards ">
     <!-- Action Bar -->
     <div class="actions">
-      <button><i id="play"class="material-icons">play_arrow</i></button> 
+      <button onclick="play()"><i id="play"class="material-icons">play_arrow</i></button> 
     <button><i class="material-icons">help_outline</i></button> 
 
     </div>
@@ -182,6 +188,19 @@
 </div>
 </div>
 </div>
+ <!-- Modal Trigger -->
+ <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+ <!-- Modal Structure -->
+ <div id="modal1" class="modal bottom-sheet">
+   <div class="modal-content">
+     <h4>Modal Header</h4>
+     <p>A bunch of text</p>
+   </div>
+   <div class="modal-footer">
+     <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+   </div>
+ </div>
 <div class="z-depth-3 copyright">Copyright: NiKole Maxwell | Web Developer</div>
     <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>

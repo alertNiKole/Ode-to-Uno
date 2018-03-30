@@ -187,7 +187,7 @@ margin-bottom: 5em;
 /*/ Active Deck  /*/
 
 #activeDeck {
-    background: #c71562;
+    background: #342c2c;
     margin-top: -3em;
 }
 
@@ -195,24 +195,23 @@ margin-bottom: 5em;
 /*/  Draw Deck  /*/
 
 #drawDeck { 
-    background: rebeccapurple;
+    background: #342c2c;
     margin-top: -23em;
     float: right;
     clear: both;
     margin-right: 1em;
 }
 
-.copyright{
+.copyright {
     margin-bottom: 1em;
     text-align: center;
-    max-height: 25px;
-    height: 20px;
+    max-height: 35px;
+    height: 35px;
     background: #342c2c;
     color: whitesmoke;
     border-top: 2px outset white;
     border-bottom: 2px inset white;
 }
-
 
 /*/  SCORE BOX  /*/
 .scoreBox {
@@ -223,12 +222,24 @@ margin-bottom: 5em;
     clear: both;
     text-align: end;
     font-family: 'Questrial', sans-serif;
+    padding: 25px;   
+    border: 2px inset #342c2c;
+    border-radius: 5em;
 }
-
+/*
 .x {
 color: #d26227;
 color: #c71562;
 color: #663399;
 color: #c71515;
 color: #000000;
+}*/
+
+.instructions {
+    color: #342c2c;
+    border: 2px double #342c2c;
+}
+
+#one {
+    background: #35a956;
 }
