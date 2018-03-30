@@ -26,7 +26,7 @@
 <!-- Import Materialize Icons -->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!-- Import Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Quintessential|Questrial" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quintessential|Macondo|Questrial" rel="stylesheet">
 
 <!-- Custom Style Sheets -->
 <link href="src/css/style.css" type="text/css" rel="stylesheet">
@@ -40,163 +40,151 @@
             <div class="col s12">
                     <div class="background"> 
                         <div class="titleBox">
-                        <h1>CLUSH</h1>
+                        <h1>clush</h1>
                         <h2>2 Player Uno with a Twist</h2>
                     </div>
 
+<!--Score Box-->
+<div class="scoreBox">
+    <div class="rounds">Rounds Played:<span id="roundsCount">0</span></div>
+    <div class="playerWins">Wins:<span id="wins">12</span></div>
+    <div class="computerWins">Losses:<span id=computerWins>2</span></div>
+</div>
+<!--Card Template
 
-                
-    
-<!-- Card Decks -->
+<div id="" class="z-depth-5 playerHand">
+        <div class="cardNo"> 0</div>
+        <div class="cardNoTwo">0</div>
+        <div class="cardPic">
+            <img src="/src/images/lucky_w_500.png" width:"250px" height:"300px" alt="CLUSH card background">
+        </div>
+</div>
+    -->
 
 
-
-<div class="cards">
-        <div class="playerCard">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <div class="current"></div>
-                    <div class="current2"></div>
+    <!-- Active Deck-->
+    <div id="last">
+            <div class="last">
+                    <h3>L</h3>
+                    <h3>A</h3>
+                    <h3>S</h3>
+                    <h3>T</h3>
                 </div>
-                <div class="playerTitle">
-                        <div>P</div>
-                        <div>L</div>
-                        <div>A</div>
-                        <div>Y</div>
-                        <div>E</div>
-                        <div>R</div>
-                </div>
-          </div>
-          <div class="computerCard">
-                <div class="card-image waves-effect waves-block waves-light">
-                <div class="current"></div>
-                <div class="current2"></div>
-                </div>
-                <div class="computerTitle">
-                        <div>C</div>
-                        <div>O</div>
-                        <div>M</div>
-                        <div>P</div>
-                        <div>U</div>
-                        <div>T</div>
-                        <div>E</div>
-                        <div>R</div>
-                    </div>
-          </div>
 
-</div>               
-<div class="yourCards" hidden>
+    <div id="activeDeck" class="z-depth-5 playerHand">
+            <div class="cardNo"> 0</div>
+            <div class="cardNoTwo">0</div>
+            <div class="cardPic">
+                <img src="/src/images/lucky_w_500.png" width:"250px" height:"300px" alt="CLUSH card background">
+            </div>
+    </div>
+</div>
+      <!-- Draw Deck-->
+<div id="draw">
+        <div class="draw">
+                <h3>D</h3>
+                <h3>R</h3>
+                <h3>A</h3>
+                <h3>W</h3>
+            </div>
+
+      <div id="drawDeck" class="z-depth-5 playerHand">
+            <div class="cardNo"> 0</div>
+            <div class="cardNoTwo">0</div>
+            <div class="cardPic">
+                <img src="/src/images/lucky_w_500.png" width:"250px" height:"300px" alt="CLUSH card background">
+            </div>
+    </div>
+</div>  
+
+<!-- Your Hand [Player] -->          
+<div class="z-depth-5 yourCards ">
+    <!-- Action Bar -->
+    <div class="actions">
+      <button><i id="play"class="material-icons">play_arrow</i></button> 
+    <button><i class="material-icons">help_outline</i></button> 
+
+    </div>
+    <div>
    <!--Title-->
     <div class="hand">
         <h3>H</h3>
         <h3>A</h3>
         <h3>N</h3>
         <h3>D</h3>
-        </div>
-<!--playable card -->
-        <div class="yourCard">
-            <div class="one">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <div class="current"></div>
-                    <div class="current2"></div>
-                </div>
-            </div>
-        </div>
-
-<!--playable card -->
-<div class="yourCard">
-    <div class="two">
-        <div class="card-image waves-effect waves-block waves-light">
-            <div class="current"></div>
-            <div class="current2"></div>
-        </div>
     </div>
+
+
+
+<div id="one" class="z-depth-5 playerHand">
+        <div class="cardNo"> 0</div>
+        <div class="cardNoTwo">0</div>
+        <div class="cardPic">
+            <img src="/src/images/lucky_w_500.png" width:"250px" height:"300px" alt="CLUSH card background">
+        </div>
+</div>
+<div id="two" class="z-depth-5 playerHand">
+        <div class="cardNo"> 0</div>
+        <div class="cardNoTwo">0</div>
+        <div class="cardPic">
+            <img src="/src/images/lucky_w_500.png" width:"250px" height:"300px" alt="CLUSH card background">
+        </div>
 </div>
 
-<!--playable card -->
-<div class="yourCard">
-        <div class="three">
-            <div class="card-image waves-effect waves-block waves-light">
-                <div class="current"></div>
-                <div class="current2"></div>
-            </div>
+<div id="three" class="z-depth-5 playerHand">
+        <div class="cardNo"> 0</div>
+        <div class="cardNoTwo">0</div>
+        <div class="cardPic">
+            <img src="/src/images/lucky_w_500.png" width:"250px" height:"300px" alt="CLUSH card background">
         </div>
-    </div>
-
-    
-<!--playable card -->
-<div class="yourCard">
-        <div class="four">
-            <div class="card-image waves-effect waves-block waves-light">
-                <div class="current"></div>
-                <div class="current2"></div>
-            </div>
-        </div>
-    </div>
-
-<!--playable card -->
-<div class="yourCard">
-        <div class="five">
-            <div class="card-image waves-effect waves-block waves-light">
-                <div class="current"></div>
-                <div class="current2"></div>
-            </div>
-        </div>
-    </div>
-
-    
-<!--playable card -->
-<div class="yourCard">
-        <div class="six">
-            <div class="card-image waves-effect waves-block waves-light">
-                <div class="current"></div>
-                <div class="current2"></div>
-            </div>
-        </div>
-    </div>
-
-
-<!--playable card -->
-<div class="yourCard">
-        <div class="seven">
-            <div class="card-image waves-effect waves-block waves-light">
-                <div class="current"></div>
-                <div class="current2"></div>
-            </div>
-        </div>
-    </div>
-
-</div>
 </div>
 
-<!--Card Object -->
-
-<div class="p1">
-    <div class="p2">
-            <div class="current">7</div>
-            <div class="current2">7</div>
-        <div class="p3">
- 
+<div id="four" class="z-depth-5 playerHand">
+        <div class="cardNo"> 0</div>
+        <div class="cardNoTwo">0</div>
+        <div class="cardPic">
+            <img src="/src/images/lucky_w_500.png" width:"250px" height:"300px" alt="CLUSH card background">
         </div>
-    </div>
 </div>
 
-    <!--- test two -->
-<div class="t1">
-    <div class="t2">
-        <img src="/src/images/lucky_w_500.png" width:"250px" height:"300px" alt="CLUSH card background">
-            <div class="current">7</div>
-            <div class="current2">7</div>
-    </div>
+<div id="five" class="z-depth-5 playerHand">
+        <div class="cardNo"> 0</div>
+        <div class="cardNoTwo">0</div>
+        <div class="cardPic">
+            <img src="/src/images/lucky_w_500.png" width:"250px" height:"300px" alt="CLUSH card background">
+        </div>
 </div>
 
+<div id="six" class="z-depth-5 playerHand">
+        <div class="cardNo"> 0</div>
+        <div class="cardNoTwo">0</div>
+        <div class="cardPic">
+            <img src="/src/images/lucky_w_500.png" width:"250px" height:"300px" alt="CLUSH card background">
+        </div>
 </div>
+
+
+<div id="seven" class="z-depth-5 playerHand">
+        <div class="cardNo"> 0</div>
+        <div class="cardNoTwo">0</div>
+        <div class="cardPic">
+            <img src="/src/images/lucky_w_500.png" width:"250px" height:"300px" alt="CLUSH card background">
+        </div>
+</div>
+
+
+</div>
+</div>  
+
+
+
 </div>     
 </div>
 </div>
 </div>
-
+<div class="z-depth-3 copyright">Copyright: NiKole Maxwell | Web Developer</div>
     <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 <script src="src/scripts/uno.js"></script>
 </body>
-</html> 
+</html>     

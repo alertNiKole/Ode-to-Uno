@@ -5,10 +5,11 @@
 
 font-family: 'Questrial', sans-serif;
 font-family: 'Quintessential', cursive;
+font-family: 'Macondo', cursive;
 */
 
 body {
-    background: #008a4aed;
+    background: #35a956;
 }
 
 .wrapper {
@@ -21,87 +22,136 @@ body {
     background-size: 45%;
     background-repeat: no-repeat;
     background-position: center center;
+    border-right: 10px double white;
+    border-left: 10px double white;
+    border-radius: 1em;
 }
 
 .titleBox {
     font-family: 'Quintessential', cursive;
-    margin-left: -25em;
+    margin-top: -2em;
+    margin-left: -20em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+
 }
 
 .titleBox h1 {
-    font-size: 10em;
+    font-size: 7em;
     color: #fff;
     text-shadow: 2px 2px 10px black;
 }
 .titleBox h2 {
+    font-family: 'Macondo', cursive;
     margin-top: -1em;
 }
-.playerCard, .computerCard{
-    border: 3px ridge white;
-    border-radius: 2em;
-    max-width: 250px;
+
+
+/*/  Action Bar /*/
+.actions {
+margin-top: -4em;
+margin-bottom: 5em;
+}
+
+.actions button {
+    border-radius: 5em;
+}
+
+/*/  Your Cards  /*/
+.yourCards {
+    align-content: center;
+    clear: both;
+    border: 3px outset #fff;
+    width: 124%;
     max-height: 350px;
-    width: 200px;
-    height: 300px;
+    height: 350px;
+    border-radius: 2em;
+    padding: .2em;
+    margin-left: -10em;
+    margin-top: 10em;
 }
 
-.playerCard {
+.hand {
+    margin-left: -6em;
+    margin-top: -1em;
+}
+
+.hand h3 {
+    color: white;
+    font-size: 2em;
+
+}
+
+.playerHand {
     float: left;
-    margin-left: -5em;
-    margin-top: 5em;
+    clear: right;
+    margin-top: -17em;
+    border: 10px double #f0f5f0;
+    padding: 12px;
+    max-width: 205px;
+    max-height: 300px;
+    height: 375px;
+    border-radius: 2em;
+    background: #342c2c;
+    margin-left: 1em;
 }
 
-.computerCard {
-    float: right;
-    margin-right: -10em;
-    margin-top: 5em;
-}
-
-.current {
+.cardNo {
+    font-family: 'Macondo', cursive;
     max-width: 60px;
     max-height: 60px;
     width: 60px;
     height: 60px;
-    border: 1px dashed white; /*Kill on fill */
     border-top-left-radius: 2em;
+    margin-left: 0em;
+    margin-top: -.3em;
+    margin-bottom: 1em;
+    font-size: 4em;
+    font-weight: bolder;
+    color: #fff;
 }
 
-.current2 {
+.cardNoTwo {
+    color: #fff;
+    font-family: 'Macondo', cursive;
     max-width: 60px;
     max-height: 60px;
     width: 60px;
     height: 60px;
-    border: 1px dashed #fff;
     border-bottom-right-radius: 2em;
-    margin-left: 9em;
-    margin-top: 11.5em;
+    margin-left: 1.75em;
+    margin-top: 2em;
+    font-size: 4.7em;
+    font-weight: bolder;
 }
 
-.infoBox {
-    border: 1px outset white;
-    border-radius: 3em;
+.cardPic img {
+    /* border: 2px outset #9cbd0d; */
+    float: left;
+    clear: both;
+    padding: 12px;
+    max-width: 200px;
+    max-height: 375px;
+    height: 175px;
+    margin-left: -1.2em;
+    margin-top: -13em;
 }
 
 
-/*/  Your Cards  /*/
-.yourCards {
-    border: 3px outset white;
-    width: 110%;
-    max-height: 275px;
-    padding: 1em;
-    border-radius: 2em;
-    margin-top: 37em;
-    padding-bottom: 20em;
+/*/  Stack Cards /*/
+.last {
+    float: left;
+    clear: both;
+    margin-top: -7em;
+    margin-bottom: 3em;
 }
 
-.hand {
-    margin-left: -5em;
-    margin-top: -1em;
-}
-.hand h3 {
-    color: white;
-    font-size: 2em;
-
+.draw {
+        float: right;
+        clear: both;
+        margin-top: -25em;
+        margin-right: -3em;
+        margin-bottom: 5em;
 }
 
 .playerTitle{
@@ -120,194 +170,65 @@ body {
     padding-left: 1em;  
 }
 
-.yourCard {
-    background: #800080;
-    border-radius: 2em;
-    max-width: 250px;
-    max-height: 350px;
-    width: 175px;
-    height: 235px;
-    float: left;
-    margin-right: 1em;
-    margin-top: -14em;
-}
-
-.one, .two, .three, .four, .five, .six, .seven {
-    float: left;
-    margin-right: -1em;
-    border: 3px ridge #fff;
-    border-radius: 2em;
-    max-width: 250px;
-    max-height: 350px;
-    width: 175px;
-    height: 235px;
-    background-image: url(/src/images/lucky_w_500.png);
-    max-width: 100%;
-    background-size: 96%;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.yourCard .six .currentb, .one .current2, .two .current2, .three .current2, .four .current2, .five .current2, .six .current2, .seven .current2, {
-    margin-top: -1em;
-    float: right;
-    margin-left: 0em;
-    margin-top: 7.1em;
-    border: 2px inset red;
-}
 
 
-
-
-/*/  Your Cards  /*/
-.yourCards {
-    border: 3px outset white;
-    width: 110%;
-    max-height: 275px;
-    padding: 1em;
-    border-radius: 2em;
-    margin-top: 37em;
-    padding-bottom: 20em;
-}
-
-.hand {
-    margin-left: -5em;
-    margin-top: -1em;
-}
-.hand h3 {
+.last, .draw {
+    font-family: 'Questrial', sans-serif;
+    font-family: 'Quintessential', cursive;
+    font-family: 'Macondo', cursive;
     color: white;
-    font-size: 2em;
-
+    text-shadow: 1px 1px 10px rebeccapurple;
 }
 
-.playerTitle{
-    color: #fff;
-    margin-top: -11em;
-    margin-left: -3em;
-    font-size: 1.7em;
-    padding-right: 1em;
+#last   {
+    margin-top: 6em;
 }
 
-.computerTitle {
-    color: #fff;
-    margin-top: -12em;
-    margin-left: 10em;
-    font-size: 1.5em;
-    padding-left: 1em;  
+/*/ Active Deck  /*/
+
+#activeDeck {
+    background: #c71562;
+    margin-top: -3em;
 }
 
-.yourCard {
-    background: #800080;
-    border-radius: 2em;
-    max-width: 250px;
-    max-height: 350px;
-    width: 175px;
-    height: 235px;
-    float: left;
-    margin-right: 1em;
-    margin-top: -14em;
-}
 
-.one, .two, .three, .four, .five, .six, .seven {
-    float: left;
-    margin-right: -1em;
-    border: 3px ridge #fff;
-    border-radius: 2em;
-    max-width: 250px;
-    max-height: 350px;
-    width: 175px;
-    height: 235px;
-    background-image: url(/src/images/lucky_w_500.png);
-    max-width: 100%;
-    background-size: 96%;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
+/*/  Draw Deck  /*/
 
-.yourCard .six .currentb, .one .current2, .two .current2, .three .current2, .four .current2, .five .current2, .six .current2, .seven .current2, {
-    margin-top: -1em;
+#drawDeck { 
+    background: rebeccapurple;
+    margin-top: -23em;
     float: right;
-    margin-left: 0em;
-    margin-top: 7.1em;
-    border: 2px inset red;
-}
-
-
-/*/     NEW     /*/
-
-.cardInner{
-    background: #ea09f1;
-    border-radius: 2em;
-    max-width: 250px;
-    max-height: 350px;
-    width: 175px;
-    height: 235px;
-    float: left;
+    clear: both;
     margin-right: 1em;
-    margin-top: -14em;
-    z-index: 80;
 }
 
-#one{
-margin-top: -1em;
-float: right;
-margin-left: 0em;
-margin-top: 7.1em;
-border: 2px inset red;
-}
-
-.card {
-    float: left;
-    margin-right: -1em;
-    border: 3px ridge #fff;
-    border-radius: 2em;
-    max-width: 250px;
-    max-height: 350px;
-    width: 175px;
-    height: 235px;
-    background-image: url(/src/images/lucky_w_500.png);
-    max-width: 100%;
-    background-size: 96%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    z-index: 90;
-}
-
-.p1 {
- border: 3px inset gold;
-}
-
-.p2 {
-    border: 3px inset #e28b07ed;
-    background: tomato;
-}
-
-.p3 {
-    border: 3px inset #0059ff;
-    width: 250px;
-    height: 275px;
-    background-image: url(/src/images/lucky_w_500.png);
-    max-width: 100%;
-    background-size: 96%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin-top: -20em;
+.copyright{
+    margin-bottom: 1em;
+    text-align: center;
+    max-height: 25px;
+    height: 20px;
+    background: #342c2c;
+    color: whitesmoke;
+    border-top: 2px outset white;
+    border-bottom: 2px inset white;
 }
 
 
-.t1{
-    margin-top:3em;     
-    border:2px outset lime;
-    padding: 12px;
-    max-width:225px;
-    max-height: 300px;
-}       
+/*/  SCORE BOX  /*/
+.scoreBox {
+    display: block;
+    float: right;
+    margin-top: -13em;
+    margin-right: -19em;
+    clear: both;
+    text-align: end;
+    font-family: 'Questrial', sans-serif;
+}
 
-.t2 img {
-
-    border:2px outset rgb(156, 189, 13);
-    padding: 12px;
-    max-width:225px;
-    max-height: 300px;
-    
+.x {
+color: #d26227;
+color: #c71562;
+color: #663399;
+color: #c71515;
+color: #000000;
 }

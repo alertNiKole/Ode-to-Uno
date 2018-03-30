@@ -1,0 +1,76 @@
+<!--playable card -->
+        <div class="yourCard">
+            <div class="one">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <div class="current"></div>
+                    <div class="current2"></div>
+                </div>
+            </div>
+        </div>
+
+<!--playable card -->
+<div class="yourCard">
+    <div class="two">
+        <div class="card-image waves-effect waves-block waves-light">
+            <div class="current"></div>
+            <div class="current2"></div>
+        </div>
+    </div>
+</div>
+
+<!--playable card -->
+<div class="yourCard">
+        <div class="three">
+            <div class="card-image waves-effect waves-block waves-light">
+                <div class="current"></div>
+                <div class="current2"></div>
+            </div>
+        </div>
+    </div>
+
+    
+<!--playable card -->
+<div class="yourCard">
+        <div class="four">
+            <div class="card-image waves-effect waves-block waves-light">
+                <div class="current"></div>
+                <div class="current2"></div>
+            </div>
+        </div>
+    </div>
+
+<!--playable card -->
+<div class="yourCard">
+        <div class="five">
+            <div class="card-image waves-effect waves-block waves-light">
+                <div class="current"></div>
+                <div class="current2"></div>
+            </div>
+        </div>
+    </div>
+
+    
+<!--playable card -->
+<div class="yourCard">
+        <div class="six">
+            <div class="card-image waves-effect waves-block waves-light">
+                <div class="current"></div>
+                <div class="current2"></div>
+            </div>
+        </div>
+    </div>
+
+
+<!--playable card -->
+<div class="yourCard">
+        <div class="seven">
+            <div class="card-image waves-effect waves-block waves-light">
+                <div class="current"></div>
+                <div class="current2"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
