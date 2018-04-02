@@ -23,6 +23,10 @@ $(document).ready(function(){
       return Math.floor(Math.random() * Math.floor(max));
     }
 /*
+blue - #191978,
+green - #217819
+red - #781919
+yellow - #beb50c
   - orange - #d26227;
   - pink    - #c71562;
   - red     - #c71515;
@@ -35,10 +39,10 @@ $(document).ready(function(){
     const black = "000000";*/
 
   colors = [
-    "#d26227",
-    "#c71562",
-    "#c71515",
-    "#663399",
+    "#191978",
+    "#217819",
+    "#781919",
+    "#beb50c",
     "#000000"
   ];
 
@@ -51,10 +55,22 @@ $(document).ready(function(){
       document.getElementById("six"),
       document.getElementById("seven")
   ];
- 
+ /*
   let type = [
-    0,1,2,3,4,5,6,7,8,9,"S","R","W", "D2", "D4"
+    0,1,2,3,4,5,6,7,8,9,"Special"
   ]
+
+  let special = {
+   special: [
+      "S",
+    "R",
+    "D2"],
+  wild: [
+      "D4", 
+      "W"]
+  }
+
+  */
   let pick = rng(cards.length);
   let pickColor= colors[rng(colors.length)];
   let pickType = type[rng(type.length)];
@@ -71,21 +87,28 @@ $(document).ready(function(){
       let pickColor= colors[rng(colors.length)];
       let pickType = type[rng(type.length)];
 
-     pickColor;
+
      pickType;
+    //deal with wild
+     if (pickColor === "#000000" || "pickType == "special") {
+
+     }
+
      cards[i].style.backgroundColor = pickColor;
      cards[i].firstElementChild.innerText = pickType;
      cards[i].firstElementChild.nextElementSibling.innerText = pickType;
      console.log(pickColor, pickType);
     }
-  }
+  };
 
 
 
-  deal();
+
   let chooseCard = cards[0]
 
   // Add logic for Black Cards
+
+
   //suppress black unless
   // configure play button better
   //Create reset Buttons  
@@ -95,3 +118,11 @@ $(document).ready(function(){
   let play = pressed.addEventListener("onclick",()  => {
     deal();
   })  */
+
+
+  //Revised
+
+  
+  let rng =function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }

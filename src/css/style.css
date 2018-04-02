@@ -10,6 +10,7 @@ font-family: 'Macondo', cursive;
 
 body {
     background: #35a956;
+    max-height: 99vh;
 }
 
 .wrapper {
@@ -17,7 +18,7 @@ body {
     max-width: 100%;
     max-height: 100vh;
     min-height: 100vh;
-/*    overflow: hidden; */
+    overflow: hidden;
     width: 100%;
     background-size: 45%;
     background-repeat: no-repeat;
@@ -59,7 +60,7 @@ margin-bottom: 5em;
 
 /*/  Your Cards  /*/
 .yourCards {
-    align-content: center;
+    float: left;
     clear: both;
     border: 3px outset #fff;
     width: 124%;
@@ -68,7 +69,7 @@ margin-bottom: 5em;
     border-radius: 2em;
     padding: .2em;
     margin-left: -10em;
-    margin-top: 10em;
+    margin-top: 1em;
 }
 
 .hand {
@@ -79,18 +80,17 @@ margin-bottom: 5em;
 .hand h3 {
     color: white;
     font-size: 2em;
-
 }
 
 .playerHand {
     float: left;
     clear: right;
-    margin-top: -17em;
+    margin-top: -16em;
     border: 10px double #f0f5f0;
     padding: 12px;
     max-width: 205px;
     max-height: 300px;
-    height: 375px;
+    height: 280px;
     border-radius: 2em;
     background: #342c2c;
     margin-left: 1em;
@@ -106,36 +106,36 @@ margin-bottom: 5em;
     margin-left: 0em;
     margin-top: -.3em;
     margin-bottom: 1em;
-    font-size: 4em;
-    font-weight: bolder;
+    font-size: 3.2em;
     color: #fff;
 }
 
 .cardNoTwo {
     color: #fff;
     font-family: 'Macondo', cursive;
-    max-width: 60px;
-    max-height: 60px;
-    width: 60px;
-    height: 60px;
+    /* max-width: 60px; */
+    /* max-height: 60px; */
+    /* width: 60px; */
+    /* height: 60px; */
     border-bottom-right-radius: 2em;
-    margin-left: 1.75em;
-    margin-top: 2em;
-    font-size: 4.7em;
-    font-weight: bolder;
+    margin-left: 1.55em;
+    margin-top: 1.7em;
+    font-size: 3.4em;
+    text-align: right;
+    float: right;
 }
 
 .cardPic img {
-    /* border: 2px outset #9cbd0d; */
-    float: left;
-    clear: both;
-    padding: 12px;
-    max-width: 200px;
-    max-height: 375px;
-    height: 175px;
-    margin-left: -1.2em;
-    margin-top: -13em;
-}
+        /* border: 2px outset #9cbd0d; */
+        float: left;
+        clear: both;
+        padding: 12px;
+        max-width: 200px;
+        max-height: 375px;
+        height: 175px;
+        margin-left: -1.2em;
+        margin-top: -15.5em;
+    }
 
 
 /*/  Stack Cards /*/
@@ -170,8 +170,6 @@ margin-bottom: 5em;
     padding-left: 1em;  
 }
 
-
-
 .last, .draw {
     font-family: 'Questrial', sans-serif;
     font-family: 'Quintessential', cursive;
@@ -190,7 +188,6 @@ margin-bottom: 5em;
     background: #342c2c;
     margin-top: -3em;
 }
-
 
 /*/  Draw Deck  /*/
 
@@ -226,14 +223,10 @@ margin-bottom: 5em;
     border: 2px inset #342c2c;
     border-radius: 5em;
 }
-/*
-.x {
-color: #d26227;
-color: #c71562;
-color: #663399;
-color: #c71515;
-color: #000000;
-}*/
+
+.modal {
+    margin-top: -5em;
+}
 
 .instructions {
     color: #342c2c;
@@ -243,3 +236,24 @@ color: #000000;
 #one {
     background: #35a956;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.x {
+color: #d26227;
+color: #c71562;
+color: #663399;
+color: #c71515;
+color: #000000;
+}*/
