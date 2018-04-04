@@ -1,5 +1,10 @@
 let selectType =  numbers.type[rng(numbers.type.length)];
 
+let turns = 0; // counts the gameplay
+let playerScore = 0; //adds to the player score
+let computerScore = 0; //adds to the computer score
+
+
 function number () {
         //log
         console.log(numbers.X, "number was chosen");
@@ -19,7 +24,7 @@ function number () {
         //card is wild
           console.log("color chosen", cards[i], selectColor, "Card is Wild");
 };
-~
+
 function special () {
             console.log(numbers.S, "This card is Special");
             //choose a number
@@ -64,3 +69,7 @@ let deal = () => {
 };
 };
 };
+
+
+
+//scoring logic

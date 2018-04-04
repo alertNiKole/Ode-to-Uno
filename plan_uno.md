@@ -55,3 +55,9 @@ Doubles
 Name change from Shamrock Uno to CLUSH
 (Clover Leprechaun Uno Shamrocks for Him)
 
+
+
+//Game ends if endGameScore is 500
+End Game is if (endGameScore === 500)
+
+endGameScore = playerScore === endGameScore >= 500

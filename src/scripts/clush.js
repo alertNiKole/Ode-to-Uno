@@ -5,6 +5,7 @@
  function rng(max) {
     return Math.floor(Math.random() * Math.floor(max));
   };
+
 //cards
 let cards = [
     document.getElementById("one"),
@@ -16,15 +17,19 @@ let cards = [
     document.getElementById("seven")
 ];
 
+
 //numbers
 let numbers = {
     type: ["X","S","W"],
     // 0-9
     X: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
+    Xvalue: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
     //special
     S: [        "S", "R", "D2"     ],
+    Svalue: [ 10, 10, 20],
     //wild
     W: [        "W", "D4"          ],
+    Wvalue: [20, 25]
 };
 
 //numbers.w[2];
@@ -113,3 +118,41 @@ colors = [
 };
 
 
+//  Define active card logic
+let activeCard = document.getElementById('activeDeck');
+
+// first pull
+
+function flip () {
+   //log
+   console.log(numbers.X, "number was chosen for the first card");
+   //choose a number
+   let pickFirst = numbers.X[rng(numbers.X.length)];
+   //update card with number chosen
+  activeCard.firstElementChild.innerText = pickFirst;
+   activeCard.firstElementChild.nextElementSibling.innerText = pickFirst;
+   //select color
+   let selectColor =   colors[rng(colors.length)];
+   //console log color selected
+   console.log("color chosen for first Card", activeCard, selectColor);
+   //update color
+ if (selectColor != "#000000")  { 
+       activeCard.style.backgroundColor = selectColor;
+ } else      
+   //card is wild
+     console.log("color chosen", cards[i], selectColor, "Card is Wild");
+}
+
+let drawCard = document.getElementById('drawDeck');
+
+drawFromPile( () => {
+  let selectType =  numbers.type[rng(numbers.type.length)];
+  if (selectType === "X") { //numbers
+    //log
+    console.log(numbers.X.arr, "this number was chosen")
+
+  } else if () {
+
+  } else
+
+});
